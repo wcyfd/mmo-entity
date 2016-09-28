@@ -1,12 +1,12 @@
 package com.demo.mmo.mmo_entity.game.entity.po;
 
 public class FightInfo {
+	/** 玩家id */
 	private int roleId;
-	private int x;
-	private int y;
-	private float clientX;
-	private float clientY;
-	
+	/** x坐标 */
+	private float x;
+	/** y坐标 */
+	private float y;
 
 	public int getRoleId() {
 		return roleId;
@@ -16,36 +16,20 @@ public class FightInfo {
 		this.roleId = roleId;
 	}
 
-	public int getX() {
+	public float getX() {
 		return x;
 	}
 
-	public void setX(int x) {
+	public void setX(float x) {
 		this.x = x;
 	}
 
-	public int getY() {
+	public float getY() {
 		return y;
 	}
 
-	public void setY(int y) {
+	public void setY(float y) {
 		this.y = y;
-	}
-
-	public float getClientX() {
-		return clientX;
-	}
-
-	public void setClientX(float clientX) {
-		this.clientX = clientX;
-	}
-
-	public float getClientY() {
-		return clientY;
-	}
-
-	public void setClientY(float clientY) {
-		this.clientY = clientY;
 	}
 
 }
