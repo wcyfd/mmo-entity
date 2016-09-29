@@ -1,0 +1,19 @@
+syntax = "proto3";
+package com.demo.mmo.mmo_entity.game.entity.net;
+
+/*******************登录****************/
+message CS_101{
+	string account=1;	
+}
+message SC_101{
+	int32 errorCode=1;	
+}
+
+/********************创建账号**************/
+message CS_102{
+	string account=1;
+	string name=2;
+}
+message SC_102{
+	int32 errorCode = 1;
+}

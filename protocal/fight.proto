@@ -1,0 +1,36 @@
+syntax = "proto3";
+package com.demo.mmo.mmo_entity.game.entity.net;
+
+//战斗信息
+message FightInfo{
+	int32 roleId = 1;
+	float x = 2;
+	float y = 3;	
+	int64 time = 4;
+}
+/*********************加入战斗**********************/
+message CS_301{
+
+}
+message SC_301{
+	int32 errorCode=1;	
+	float x = 2;
+	float y = 3;
+}
+
+/*********************移动协议**********************/
+message CS_302{
+	float x = 1;
+	float y = 2;
+}
+message SC_302{
+	float x = 1;
+	float y = 2;
+	int64 time = 3;
+	int32 roleId = 4;
+}
+
+/*********************(主推)通知每一个人的位置******************/
+message SC_303{	
+	FightInfo fightInfo = 1;
+}
